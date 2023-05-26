@@ -1,16 +1,17 @@
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template 123
-    </div>
-  );
-};
+import { Component } from "react";
+import FeedBack from "./FeedBack/FeedBack";
+
+class App extends Component {
+
+  render() {
+    return (
+      <div>
+        <FeedBack/>
+      </div>
+    )
+  }
+}
+
+export default App;
+
+ 
