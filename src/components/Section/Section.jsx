@@ -1,15 +1,12 @@
 import { Component } from "react";
 
-class Section extends Component {
-
-    render() {
-        return (
-            <div>
-
-                
-            </div>
-        )
-    }
-}
+const Section = ({ title, children }) => {
+  return (
+    <div>
+      <h2>{title}</h2>
+      {children}
+    </div>
+  );
+};
 
 export default Section;
