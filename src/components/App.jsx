@@ -35,7 +35,9 @@ class App extends Component {
     const { good, neutral, bad } = this.state;
 
     return (
-      <div>
+      <div style={{
+        margin: 200
+      }}>
          <Section title="Please leave feedback">
           <FeedbackOption
             types={['good', 'neutral', 'bad']}

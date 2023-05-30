@@ -1,12 +1,14 @@
 import { Component } from 'react';
+import css from 'components/FeedbackOption/FeedbackOption.module.css';
 
 class FeedbackOption extends Component {
   render() {
     const { types, handleFeedBackClick } = this.props;
     return (
-      <div>
+      <div className={css.BtnContainer}>
         {types.map(type => (
           <button
+            className={css.BtnOption}
             type="button"
             key={type}
             onClick={() => handleFeedBackClick(type)}
@@ -20,27 +22,3 @@ class FeedbackOption extends Component {
 }
 
 export default FeedbackOption;
-
-// import React, { Component } from "react";
-
-// class FeedbackOption extends Component {
-//   render() {
-//     const { types, handleFeedBackClick } = this.props;
-
-//     return (
-//       <div>
-//         {types.map((type) => (
-//           <button
-//             type="button"
-//             key={type}
-//             onClick={() => handleFeedBackClick(type)}
-//           >
-//             {type}
-//           </button>
-//         ))}
-//       </div>
-//     );
-//   }
-// }
-
-// export default FeedbackOption;
